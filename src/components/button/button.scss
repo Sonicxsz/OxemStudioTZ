@@ -1,0 +1,45 @@
+.button {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 426px;
+    height: 68px;
+    font-weight: 900;
+    font-size: 30px;
+    border-radius: 40px;
+    border: unset;
+    background: #ff9514;
+    color: #ffffff;
+    transition: background 0.2s linear;
+  }
+  &__btn:hover {
+    background: #111111;
+  }
+  &__btn:active {
+    background: #575757;
+  }
+  &__btn:disabled {
+    background: rgba(255, 149, 20, 0.4);
+  }
+}
+
+@media (max-width: 1024px) {
+  .button {
+    &__btn {
+      width: 345px;
+      font-size: 30px;
+      margin-top: 44px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .button {
+    &__btn {
+      width: 280px;
+      height: 60px;
+      font-size: 22px;
+      margin-top: 32px;
+    }
+  }
+}

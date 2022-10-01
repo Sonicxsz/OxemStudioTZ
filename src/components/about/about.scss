@@ -1,0 +1,29 @@
+.about {
+  width: 700px;
+  &__H1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 54px;
+    color: #111111;
+    font-family: "Nekst-Black";
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    &__H1 {
+      font-size: 44px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .about {
+    width: 279px;
+    &__H1 {
+      font-size: 34px;
+      margin-bottom: 32px;
+    }
+  }
+}
