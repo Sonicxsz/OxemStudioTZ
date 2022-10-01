@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .range {
     position: relative;
     display: inline-block;
@@ -148,7 +148,7 @@
       margin-right: 6px;
     }
     &__inputRange {
-      bottom: 0;
+      bottom: -1px;
       left: 15px;
       width: 88%;
     }

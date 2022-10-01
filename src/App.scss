@@ -1,10 +1,10 @@
 .container {
-  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
   height: auto;
   padding: 210px 48px 48px 48px;
   margin: 0 auto;
-  display: flex;
-  flex-flow: wrap;
 }
 
 .flex {
@@ -12,6 +12,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  flex-flow: wrap;
   &__sum {
     display: flex;
     justify-content: space-between;
@@ -53,9 +54,10 @@
     }
   }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 425px) {
   .container {
-    width: 320px;
+    max-width: 425px;
     height: 100%;
     padding: 44px 20px 20px 20px;
     gap: 0;
