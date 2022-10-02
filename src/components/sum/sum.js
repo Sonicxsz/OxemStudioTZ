@@ -1,4 +1,3 @@
-import React from 'react'
 import './sum.scss'
 
 function Sum ({ text, children }) {

@@ -19,8 +19,11 @@
   &__btn:active {
     background: #575757;
   }
+  // &__btn:disabled {
+  //   background: rgba(255, 149, 20, 0.4);
+  // }
   &__btn:disabled {
-    background: rgba(255, 149, 20, 0.4);
+    background: #ff9514;
   }
 }
 
