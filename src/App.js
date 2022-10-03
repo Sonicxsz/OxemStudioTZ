@@ -67,8 +67,7 @@ function App () {
         setFirstPay={setFirstPay}
         value={firstPay}
         setValue={setPercent}
-        price={cost}
-        setPercent={setPercent}>
+        price={cost}>
         <Title text={'Первоначальный взнос'} />
 
       </RangeInp>

@@ -18,7 +18,6 @@ export const validateNum = (e) => {
   return e
 }
 
-export const mask = (num, currency = false) => {
-  num = num.toString().replace(/\s/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-  return currency ? num + ' $' : num
+export const mask = (num) => {
+  return num.toString().replace(/\s/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 }
