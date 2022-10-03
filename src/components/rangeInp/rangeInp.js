@@ -7,6 +7,7 @@ function RangeInp ({
   children, value, setValue, percent,
   setFirstPay, price, loading
 }) {
+  const [focus, setFocus] = useState(false)
   const [local, setLocal] = useState(value)
   const [localPercent, setLocalPercent] = useState(percent)
 
@@ -43,12 +44,18 @@ function RangeInp ({
             if (type !== 'percent') { checkValues({ value, min, max }, setValue) } else {
               const min = price * 0.1
               const max = price * 0.6
+              setFocus(false)
               checkValues({ value, min, max }, setFirstPay)
+            }
+          }}
+          onFocus={() => {
+            if (type === 'percent') {
+              setFocus(true)
             }
           }}
           onChange={(e) => {
             handleChange(validateNum(e))
-          }} value={type === 'percent' ? local : local} />
+          }} value={type === 'percent' && focus === false ? local + ' ₽' : local} />
 
         <div className={clazz}>{icon}</div>
         <input

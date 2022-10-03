@@ -1,5 +1,5 @@
-
 import './button.scss'
+
 import { ReactComponent as Spinner } from './spinner.svg'
 function Button ({ loading, send }) {
   return (

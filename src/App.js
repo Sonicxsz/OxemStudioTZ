@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { mask } from './utils/valueHelpers'
-import './App.scss'
+import { useLeasingService } from './service/server'
 import About from './components/about/about'
 import Button from './components/button/button'
 import RangeInp from './components/rangeInp/rangeInp'
 import Sum from './components/sum/sum'
 import Title from './components/title/title'
-import { useLeasingService } from './service/server'
+import './App.scss'
 
 function App () {
   const [cost, setCost] = useState(1000000) // стоимость машины

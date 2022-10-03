@@ -23,7 +23,7 @@ export const useLeasingService = () => {
   }
 
   const sendData = async (url, data) => {
-    const res = await request(url, 'POST', data)
+    return await request(url, 'POST', data)
   }
 
   return { sendData, loading, error }
